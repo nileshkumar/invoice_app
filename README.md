@@ -1,25 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Invoice Uploader application
 
-Things you may want to cover:
+* Ruby version : ruby 3.1.2
 
-* Ruby version
+* Rails version : Rails 7.0.4
 
-* System dependencies
+* Create application: rails new invoice_app -c bootstrap -d mysql
 
-* Configuration
+* Database creation: rails db:setup
 
-* Database creation
+* Run rails server: rails server
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-Invoice uploader application
