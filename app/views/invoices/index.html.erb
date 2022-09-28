@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+
+<div id="invoices">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+      <th scope="col">#</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Due Date</th>
+        <th scope="col">Selling Price</th>
+      </tr>
+    </thead>
+    <% @invoices.each do |invoice| %>
+      <%= render invoice %>
+    <% end %>
+  </table>
+</div>
+
+
+<div class="input-group mb-3">
+  <%= form_tag import_invoices_path, multipart: true do %>
+    <%= file_field_tag :file, class:"btn btn-outline-primary" %>  
+    <%= submit_tag "Upload Invoice", class:"btn btn-outline-primary" %>
+  <% end %>
+</div>
+
